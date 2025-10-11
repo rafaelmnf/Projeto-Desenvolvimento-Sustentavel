@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reduzindo o Consumo de Energia | GreenIT</title>
+<link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#2ECC71',
+              secondary: '#3498DB',
+              dark: '#1A252F',
+              light: '#F8F9FA',
+            }
+          }
+        }
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+      .infographic-container {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      }
+      .energy-meter {
+        height: 20px;
+        background: linear-gradient(90deg, #2ECC71 0%, #F1C40F 50%, #E74C3C 100%);
+        border-radius: 10px;
+      }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <a href="index.html" class="flex items-center">
+              <i data-feather="cloud" class="text-primary mr-2"></i>
+              <span class="text-xl font-bold text-dark">GreenIT</span>
+            </a>
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="index.html" class="text-gray-700 hover:text-primary transition">Início</a>
+            <a href="index.html#infographics" class="text-gray-700 hover:text-primary transition">Infográficos</a>
+            <a href="index.html#about" class="text-gray-700 hover:text-primary transition">Sobre</a>
+          </div>
+          <button class="md:hidden">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-dark mb-4">Reduzindo o Consumo de Energia</h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">Estratégias para reduzir o uso de energia na infraestrutura de TI</p>
+      </div>
+
+      <div class="infographic-container rounded-2xl shadow-xl overflow-hidden mb-12">
+        <div class="p-8 md:p-12 lg:p-16 bg-white">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div class="bg-secondary bg-opacity-10 p-6 rounded-xl inline-block mb-6">
+                <i data-feather="zap" class="text-secondary text-4xl"></i>
+              </div>
+              <h2 class="text-3xl font-bold text-dark mb-6">O Desafio Energético</h2>
+              <p class="text-gray-700 mb-6">Data centers e infraestrutura de TI são responsáveis por aproximadamente 1-2% do uso global de eletricidade, com essa porcentagem crescendo rapidamente à medida que a transformação digital acelera.</p>
+              
+              <div class="mb-6">
+                <div class="flex justify-between mb-2">
+                  <span class="text-sm font-medium text-gray-700">Eficiência Energética</span>
+                  <span class="text-sm font-medium text-gray-700">Sua Infraestrutura de TI</span>
+                </div>
+                <div class="energy-meter mb-2"></div>
+                <div class="flex justify-between text-xs text-gray-500">
+                  <span>Eficiente</span>
+                  <span>Média</span>
+                  <span>Ineficiente</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <img src="http://static.photos/technology/640x360/4" alt="Uso de Energia em Data Center" class="rounded-xl shadow-lg w-full">
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-secondary text-white p-8 md:p-12">
+          <div class="max-w-4xl mx-auto">
+            <h3 class="text-2xl font-bold mb-6">Estratégias Chave para Redução de Energia</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                <div class="flex items-center mb-4">
+                  <div class="bg-white rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                    <i data-feather="cpu" class="text-secondary"></i>
+                  </div>
+                  <h4 class="font-bold">Virtualização</h4>
+                </div>
+                <p class="text-sm">Executar múltiplas máquinas virtuais em um único servidor físico pode melhorar a utilização de 10-15% para 60-80%, reduzindo drasticamente as necessidades de energia.</p>
+              </div>
+              <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                <div class="flex items-center mb-4">
+                  <div class="bg-white rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                    <i data-feather="cloud" class="text-secondary"></i>
+                  </div>
+                  <h4 class="font-bold">Migração para a Nuvem</h4>
+                </div>
+                <p class="text-sm">Provedores de nuvem alcançam uma eficiência energética 2-4x maior do que data centers empresariais típicos através de infraestrutura e escala otimizadas.</p>
+              </div>
+              <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                <div class="flex items-center mb-4">
+                  <div class="bg-white rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                    <i data-feather="moon" class="text-secondary"></i>
+                  </div>
+                  <h4 class="font-bold">Gerenciamento de Energia</h4>
+                </div>
+                <p class="text-sm">Implementar políticas de desligamento automático para servidores e estações de trabalho ociosas pode economizar de 20 a 30% do consumo de energia.</p>
+              </div>
+              <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                <div class="flex items-center mb-4">
+                  <div class="bg-white rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                    <i data-feather="hard-drive" class="text-secondary"></i>
+                  </div>
+                  <h4 class="font-bold">Hardware Eficiente</h4>
+                </div>
+                <p class="text-sm">Equipamentos com certificação Energy Star usam de 30 a 65% menos energia do que modelos padrão, sem sacrificar o desempenho.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 md:p-12">
+          <div class="max-w-4xl mx-auto">
+            <h3 class="text-2xl font-bold text-dark mb-6">Potencial de Economia de Energia</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+              <div class="text-center">
+                <div class="bg-primary text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">30%</div>
+                <p class="text-gray-700">Economia com virtualização de servidores</p>
+              </div>
+              <div class="text-center">
+                <div class="bg-primary text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">40%</div>
+                <p class="text-gray-700">Economia com migração para a nuvem</p>
+              </div>
+              <div class="text-center">
+                <div class="bg-primary text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">25%</div>
+                <p class="text-gray-700">Economia com gerenciamento de energia</p>
+              </div>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-xl">
+              <div class="flex items-start">
+                <i data-feather="alert-circle" class="text-secondary mr-3 mt-1"></i>
+                <div>
+                  <h4 class="font-bold text-dark mb-2">Você Sabia?</h4>
+                  <p class="text-gray-700">Um único computador de mesa ocioso, deixado ligado durante a noite, pode desperdiçar energia suficiente para imprimir mais de 5.000 páginas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-100 p-8 md:p-12">
+          <div class="max-w-4xl mx-auto">
+            <h3 class="text-2xl font-bold text-dark mb-6">Estudo de Caso: A Eficiência da Nuvem da Microsoft</h3>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <p class="text-gray-700 mb-6">A pesquisa da Microsoft mostra que a computação em nuvem pode ser até 93% mais eficiente em termos de energia do que as soluções locais:</p>
+                <ul class="space-y-3 text-gray-700 mb-6">
+                  <li class="flex items-start">
+                    <i data-feather="check-circle" class="text-secondary mr-2"></i>
+                    <span>Organizações pequenas veem uma economia de energia de 90-95%</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i data-feather="check-circle" class="text-secondary mr-2"></i>
+                    <span>Organizações médias veem uma economia de energia de 60-90%</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i data-feather="check-circle" class="text-secondary mr-2"></i>
+                    <span>Organizações grandes veem uma economia de energia de 30-60%</span>
+                  </li>
+                </ul>
+                <p class="text-gray-700">Essas economias vêm da arquitetura multi-tenant, provisionamento dinâmico e altas taxas de utilização de servidores em data centers na nuvem.</p>
+              </div>
+              <div>
+                <img src="http://static.photos/technology/640x360/5" alt="Data Center da Microsoft" class="rounded-xl shadow-lg w-full">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 md:p-12">
+          <div class="max-w-4xl mx-auto">
+            <div class="bg-primary bg-opacity-10 p-8 rounded-xl">
+              <h3 class="text-2xl font-bold text-dark mb-6 text-center">Passos Práticos para Reduzir o Uso de Energia</h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="font-bold text-dark mb-3">Ações Imediatas</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li class="flex items-start">
+                      <i data-feather="check" class="text-primary mr-2"></i>
+                      <span>Implemente modos de suspensão automática para todos os dispositivos</span>
+                    </li>
+                    <li class="flex items-start">
+                      <i data-feather="check" class="text-primary mr-2"></i>
+                      <span>Consolide servidores subutilizados</span>
+                    </li>
+                    <li class="flex items-start">
+                      <i data-feather="check" class="text-primary mr-2"></i>
+                      <span>Atualize para equipamentos com certificação Energy Star</span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-bold text-dark mb-3">Estratégias de Longo Prazo</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li class="flex items-start">
+                      <i data-feather="check" class="text-primary mr-2"></i>
+                      <span>Desenvolva um roteiro de migração para a nuvem</span>
+                    </li>
+                    <li class="flex items-start">
+                      <i data-feather="check" class="text-primary mr-2"></i>
+                      <span>Implemente virtualização abrangente</span>
+                    </li>
+                    <li class="flex items-start">
+                      <i data-feather="check" class="text-primary mr-2"></i>
+                      <span>Estabeleça KPIs de eficiência energética</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-6 mb-12">
+        <h3 class="text-xl font-bold text-dark mb-4">Fontes e Referências</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li>
+            <a href="https://www.ibm.com/br-pt/think/topics/green-computing" target="_blank" class="text-primary hover:underline flex items-center">
+              IBM - O que é Computação Verde? <i data-feather="external-link" class="ml-2"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.bhs.com.br/2020/03/03/como-a-nuvem-pode-contribuir-para-a-ti-verde/" target="_blank" class="text-primary hover:underline flex items-center">
+              BHS - Como a nuvem pode contribuir para a TI Verde? <i data-feather="external-link" class="ml-2"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.oracle.com/br/sustainability/green-cloud/" target="_blank" class="text-primary hover:underline flex items-center">
+              Oracle - Nuvem Verde <i data-feather="external-link" class="ml-2"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex justify-between">
+        <a href="post1.html" class="inline-flex items-center text-primary font-medium">
+          <i data-feather="arrow-left" class="mr-2"></i> Anterior: Introdução à TI Verde
+        </a>
+        <a href="post3.html" class="inline-flex items-center text-primary font-medium">
+          Próximo: Reduzindo o Consumo de Água <i data-feather="arrow-right" class="ml-2"></i>
+</a>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4">GreenIT</h3>
+            <p class="text-gray-400">Estratégias práticas de sustentabilidade para empresas de TI.</p>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Links Rápidos</h4>
+            <ul class="space-y-2">
+              <li><a href="index.html" class="text-gray-400 hover:text-primary transition">Início</a></li>
+              <li><a href="index.html#infographics" class="text-gray-400 hover:text-primary transition">Infográficos</a></li>
+              <li><a href="index.html#about" class="text-gray-400 hover:text-primary transition">Sobre</a></li>
+              <li><a href="index.html#contact" class="text-gray-400 hover:text-primary transition">Contato</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Conecte-se</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-primary transition"><i data-feather="twitter"></i></a>
+              <a href="#" class="text-gray-400 hover:text-primary transition"><i data-feather="linkedin"></i></a>
+              <a href="#" class="text-gray-400 hover:text-primary transition"><i data-feather="github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+          <p>&copy; 2025 GreenIT. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      feather.replace();
+    </script>
+</body>
+</html>

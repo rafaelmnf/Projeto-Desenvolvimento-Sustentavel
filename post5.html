@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduzindo Emissões de Carbono | GreenIT</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#2ECC71',
+              secondary: '#3498DB',
+              dark: '#1A252F',
+              light: '#F8F9FA',
+            }
+          }
+        }
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+      .infographic-container {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <a href="index.html" class="flex items-center">
+              <i data-feather="cloud" class="text-primary mr-2"></i>
+              <span class="text-xl font-bold text-dark">GreenIT</span>
+            </a>
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="index.html" class="text-gray-700 hover:text-primary transition">Início</a>
+            <a href="index.html#infographics" class="text-gray-700 hover:text-primary transition">Infográficos</a>
+            <a href="index.html#about" class="text-gray-700 hover:text-primary transition">Sobre</a>
+          </div>
+          <button class="md:hidden">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Infographic Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-dark mb-4">Reduzindo Emissões de Carbono</h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">Como a migração para a nuvem pode reduzir sua pegada de carbono</p>
+      </div>
+
+      <div class="infographic-container rounded-2xl shadow-xl overflow-hidden mb-12">
+        <div class="p-8 md:p-12 lg:p-16 bg-white">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div class="bg-primary bg-opacity-10 p-6 rounded-xl inline-block mb-6">
+                <i data-feather="wind" class="text-primary text-4xl"></i>
+              </div>
+              <h2 class="text-3xl font-bold text-dark mb-6">TI e as Emissões de Carbono</h2>
+              <p class="text-gray-700 mb-6">A indústria de TI é responsável por 2-3% das emissões globais de CO2, equivalente ao setor de aviação.</p>
+              <div class="bg-gray-100 p-6 rounded-xl mb-6">
+                <h3 class="font-bold text-dark mb-3">Principais Fontes:</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li class="flex items-start">
+                    <i data-feather="alert-triangle" class="text-primary mr-2"></i>
+                    <span>Data centers ineficientes (45%)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i data-feather="alert-triangle" class="text-primary mr-2"></i>
+                    <span>Fabricação de equipamentos (30%)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i data-feather="alert-triangle" class="text-primary mr-2"></i>
+                    <span>Redes de comunicação (25%)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <img src="http://static.photos/technology/640x360/9" alt="Emissões de Carbono" class="rounded-xl shadow-lg w-full">
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-primary text-white p-8 md:p-12">
+          <div class="max-w-4xl mx-auto">
+            <h3 class="text-2xl font-bold mb-6">Estratégias de Redução</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                <div class="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4 mx-auto">
+                  <i data-feather="cloud" class="text-primary"></i>
+                </div>
+                <h4 class="font-bold text-center mb-2">Migração para Nuvem</h4>
+                <p class="text-sm text-center">Redução de 30-90% nas emissões</p>
+              </div>
+              <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                <div class="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4 mx-auto">
+                  <i data-feather="sun" class="text-primary"></i>
+                </div>
+                <h4 class="font-bold text-center mb-2">Energia Renovável</h4>
+                <p class="text-sm text-center">Priorizar provedores verdes</p>
+              </div>
+              <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                <div class="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4 mx-auto">
+                  <i data-feather="cpu" class="text-primary"></i>
+                </div>
+                <h4 class="font-bold text-center mb-2">Otimização de Código</h4>
+                <p class="text-sm text-center">Menos ciclos de CPU = menos energia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 md:p-12">
+          <div class="max-w-4xl mx-auto">
+            <h3 class="text-2xl font-bold text-dark mb-6">Benefícios da Nuvem</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="border border-gray-200 rounded-xl p-6">
+                <div class="flex items-center mb-4">
+                  <div class="bg-primary bg-opacity-10 p-3 rounded-lg mr-4">
+                    <i data-feather="zap" class="text-primary"></i>
+                  </div>
+                  <h4 class="font-bold text-dark">Eficiência Energética</h4>
+                </div>
+                <p class="text-gray-700">Servidores compartilhados operam em capacidade próxima de 100% vs 10-15% em data centers locais</p>
+              </div>
+              <div class="border border-gray-200 rounded-xl p-6">
+                <div class="flex items-center mb-4">
+                  <div class="bg-primary bg-opacity-10 p-3 rounded-lg mr-4">
+                    <i data-feather="thermometer" class="text-primary"></i>
+                  </div>
+                  <h4 class="font-bold text-dark">Resfriamento Otimizado</h4>
+                </div>
+                <p class="text-gray-700">Data centers em nuvem usam técnicas avançadas como resfriamento líquido e free cooling</p>
+              </div>
+              <div class="border border-gray-200 rounded-xl p-6">
+                <div class="flex items-center mb-4">
+                  <div class="bg-primary bg-opacity-10 p-3 rounded-lg mr-4">
+                    <i data-feather="trending-up" class="text-primary"></i>
+                  </div>
+                  <h4 class="font-bold text-dark">Escalabilidade</h4>
+                </div>
+                <p class="text-gray-700">Recursos sob demanda evitam superprovisionamento de hardware</p>
+              </div>
+              <div class="border border-gray-200 rounded-xl p-6">
+                <div class="flex items-center mb-4">
+                  <div class="bg-primary bg-opacity-10 p-3 rounded-lg mr-4">
+                    <i data-feather="clock" class="text-primary"></i>
+                  </div>
+                  <h4 class="font-bold text-dark">Atualizações Constantes</h4>
+                </div>
+                <p class="text-gray-700">Hardware sempre moderno e eficiente sem necessidade de investimento local</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-100 p-8 md:p-12">
+          <div class="max-w-4xl mx-auto">
+            <h3 class="text-2xl font-bold text-dark mb-6">Estudo de Caso: AWS e Sustentabilidade</h3>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <p class="text-gray-700 mb-6">A Amazon Web Services implementou diversas iniciativas para reduzir sua pegada de carbono:</p>
+                <ul class="space-y-3 text-gray-700 mb-6">
+                  <li class="flex items-start">
+                    <i data-feather="check-circle" class="text-primary mr-2"></i>
+                    <span>Meta de 100% energia renovável até 2025</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i data-feather="check-circle" class="text-primary mr-2"></i>
+                    <span>Eficiência energética 3.6x maior que média de data centers locais</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i data-feather="check-circle" class="text-primary mr-2"></i>
+                    <span>Redução de 88% nas emissões por uso de nuvem vs soluções locais</span>
+                  </li>
+                </ul>
+                <a href="https://aws.amazon.com/sustainability/" target="_blank" class="inline-flex items-center text-primary font-medium">
+                  Saiba mais no site da AWS <i data-feather="external-link" class="ml-2"></i>
+                </a>
+              </div>
+              <div>
+                <img src="http://static.photos/technology/640x360/10" alt="Data Center AWS" class="rounded-xl shadow-lg w-full">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 md:p-12">
+          <div class="max-w-4xl mx-auto">
+            <div class="bg-secondary bg-opacity-10 p-8 rounded-xl">
+              <h3 class="text-2xl font-bold text-dark mb-6 text-center">Pronto para Reduzir Suas Emissões?</h3>
+              <p class="text-gray-700 mb-6 text-center">Comece sua jornada com estas etapas:</p>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                  <div class="bg-secondary text-white rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-3">
+                    <span class="font-bold">1</span>
+                  </div>
+                  <p class="text-sm text-gray-700">Calcule sua pegada de carbono atual</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                  <div class="bg-secondary text-white rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-3">
+                    <span class="font-bold">2</span>
+                  </div>
+                  <p class="text-sm text-gray-700">Identifique cargas de trabalho para migração</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                  <div class="bg-secondary text-white rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-3">
+                    <span class="font-bold">3</span>
+                  </div>
+                  <p class="text-sm text-gray-700">Escolha provedores com energia renovável</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-6 mb-12">
+        <h3 class="text-xl font-bold text-dark mb-4">Fontes & Referências</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li>
+            <a href="https://aws.amazon.com/sustainability/" target="_blank" class="text-primary hover:underline flex items-center">
+              AWS - Sustentabilidade <i data-feather="external-link" class="ml-2"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://sustainability.google/progress/" target="_blank" class="text-primary hover:underline flex items-center">
+              Google Cloud - Sustentabilidade <i data-feather="external-link" class="ml-2"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.microsoft.com/en-us/corporate-responsibility/sustainability" target="_blank" class="text-primary hover:underline flex items-center">
+              Microsoft - Sustentabilidade <i data-feather="external-link" class="ml-2"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex justify-between">
+        <a href="post4.html" class="inline-flex items-center text-primary font-medium">
+          <i data-feather="arrow-left" class="mr-2"></i> Anterior: Reduzindo o Lixo Eletrônico
+        </a>
+        <a href="post6.html" class="inline-flex items-center text-primary font-medium">
+          Próximo: O Papel da Computação em Nuvem <i data-feather="arrow-right" class="ml-2"></i>
+        </a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4">GreenIT</h3>
+            <p class="text-gray-400">Estratégias práticas de sustentabilidade para empresas de TI.</p>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Links Rápidos</h4>
+            <ul class="space-y-2">
+              <li><a href="index.html" class="text-gray-400 hover:text-primary transition">Início</a></li>
+              <li><a href="index.html#infographics" class="text-gray-400 hover:text-primary transition">Infográficos</a></li>
+              <li><a href="index.html#about" class="text-gray-400 hover:text-primary transition">Sobre</a></li>
+              <li><a href="index.html#contact" class="text-gray-400 hover:text-primary transition">Contato</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Conectar</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-primary transition"><i data-feather="twitter"></i></a>
+              <a href="#" class="text-gray-400 hover:text-primary transition"><i data-feather="linkedin"></i></a>
+              <a href="#" class="text-gray-400 hover:text-primary transition"><i data-feather="github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+          <p>&copy; 2025 GreenIT. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      feather.replace();
+    </script>
+</body>
+</html>

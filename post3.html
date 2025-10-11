@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduzindo o Consumo de Água | GreenIT</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#2ECC71',
+              secondary: '#3498DB',
+              dark: '#1A252F',
+              light: '#F8F9FA',
+            }
+          }
+        }
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+      .infographic-container {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <a href="index.html" class="flex items-center">
+              <i data-feather="cloud" class="text-primary mr-2"></i>
+              <span class="text-xl font-bold text-dark">GreenIT</span>
+            </a>
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="index.html" class="text-gray-700 hover:text-primary transition">Início</a>
+            <a href="index.html#infographics" class="text-gray-700 hover:text-primary transition">Infográficos</a>
+            <a href="index.html#about" class="text-gray-700 hover:text-primary transition">Sobre</a>
+          </div>
+          <button class="md:hidden">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Infographic Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-dark mb-4">Reduzindo o Consumo de Água</h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">Soluções inovadoras de resfriamento para data centers</p>
+      </div>
+
+      <div class="infographic-container rounded-2xl shadow-xl overflow-hidden mb-12">
+        <div class="p-8 md:p-12 lg:p-16 bg-white">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div class="bg-primary bg-opacity-10 p-6 rounded-xl inline-block mb-6">
+                <i data-feather="droplet" class="text-primary text-4xl"></i>
+              </div>
+              <h2 class="text-3xl font-bold text-dark mb-6">Resfriamento Sustentável para Data Centers</h2>
+              <p class="text-gray-700 mb-6">Data centers consomem grandes quantidades de água para resfriamento. Soluções inovadoras podem reduzir esse consumo em até 90%.</p>
+              <div class="bg-gray-100 p-6 rounded-xl mb-6">
+                <h3 class="font-bold text-dark mb-3">Estratégias Eficientes:</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li class="flex items-start">
+                    <i data-feather="check" class="text-primary mr-2"></i>
+                    <span>Resfriamento a ar livre (free cooling)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i data-feather="check" class="text-primary mr-2"></i>
+                    <span>Sistemas de resfriamento evaporativo indireto</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i data-feather="check" class="text-primary mr-2"></i>
+                    <span>Controle preciso de umidade</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i data-feather="check" class="text-primary mr-2"></i>
+                    <span>Reuso de água em sistemas fechados</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <img src="http://static.photos/technology/640x360/3" alt="Data Center Sustentável" class="rounded-xl shadow-lg w-full">
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-primary text-white p-8 md:p-12">
+          <div class="max-w-4xl mx-auto">
+            <h3 class="text-2xl font-bold mb-6">Tecnologias de Resfriamento</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                <div class="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4 mx-auto">
+                  <i data-feather="wind" class="text-primary"></i>
+                </div>
+                <h4 class="font-bold text-center mb-2">Resfriamento a Ar</h4>
+                <p class="text-sm text-center">Uso de ar externo em climas favoráveis</p>
+              </div>
+              <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                <div class="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4 mx-auto">
+                  <i data-feather="zap" class="text-primary"></i>
+                </div>
+                <h4 class="font-bold text-center mb-2">Resfriamento por Imersão</h4>
+                <p class="text-sm text-center">Servidores imersos em líquido não condutivo</p>
+              </div>
+              <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                <div class="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4 mx-auto">
+                  <i data-feather="thermometer" class="text-primary"></i>
+                </div>
+                <h4 class="font-bold text-center mb-2">Controle Inteligente</h4>
+                <p class="text-sm text-center">IA para otimizar consumo de água e energia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 md:p-12">
+          <div class="max-w-4xl mx-auto">
+            <h3 class="text-2xl font-bold text-dark mb-6">Casos de Sucesso</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="border border-gray-200 rounded-xl p-6">
+                <div class="flex items-center mb-4">
+                  <div class="bg-primary bg-opacity-10 p-3 rounded-lg mr-4">
+                    <i data-feather="cloud" class="text-primary"></i>
+                  </div>
+                  <h4 class="font-bold text-dark">Google</h4>
+                </div>
+                <p class="text-gray-700">Reduziu o consumo de água em 50% usando inteligência artificial para otimizar sistemas de resfriamento.</p>
+              </div>
+              <div class="border border-gray-200 rounded-xl p-6">
+                <div class="flex items-center mb-4">
+                  <div class="bg-primary bg-opacity-10 p-3 rounded-lg mr-4">
+                    <i data-feather="server" class="text-primary"></i>
+                  </div>
+                  <h4 class="font-bold text-dark">Microsoft</h4>
+                </div>
+                <p class="text-gray-700">Data centers submarinos usam água do mar para resfriamento sem tratamento químico.</p>
+              </div>
+              <div class="border border-gray-200 rounded-xl p-6">
+                <div class="flex items-center mb-4">
+                  <div class="bg-primary bg-opacity-10 p-3 rounded-lg mr-4">
+                    <i data-feather="cpu" class="text-primary"></i>
+                  </div>
+                  <h4 class="font-bold text-dark">Facebook</h4>
+                </div>
+                <p class="text-gray-700">Uso de sistemas evaporativos em climas secos com eficiência hídrica comprovada.</p>
+              </div>
+              <div class="border border-gray-200 rounded-xl p-6">
+                <div class="flex items-center mb-4">
+                  <div class="bg-primary bg-opacity-10 p-3 rounded-lg mr-4">
+                    <i data-feather="activity" class="text-primary"></i>
+                  </div>
+                  <h4 class="font-bold text-dark">AWS</h4>
+                </div>
+                <p class="text-gray-700">Implementou sistemas de reuso de água em 80% de seus data centers globais.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-100 p-8 md:p-12">
+          <div class="max-w-4xl mx-auto">
+            <h3 class="text-2xl font-bold text-dark mb-6">Estudo de Caso: Resfriamento Sustentável</h3>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <p class="text-gray-700 mb-6">Um grande provedor de cloud na Europa implementou um sistema de resfriamento evaporativo indireto:</p>
+                <ul class="space-y-3 text-gray-700 mb-6">
+                  <li class="flex items-start">
+                    <i data-feather="check-circle" class="text-primary mr-2"></i>
+                    <span>Redução de 85% no consumo de água</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i data-feather="check-circle" class="text-primary mr-2"></i>
+                    <span>Economia anual de 20 milhões de litros</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i data-feather="check-circle" class="text-primary mr-2"></i>
+                    <span>Redução de 15% no consumo energético</span>
+                  </li>
+                </ul>
+                <a href="https://www.google.com/about/datacenters/water/" target="_blank" class="inline-flex items-center text-primary font-medium">
+                  Leia mais no site do Google <i data-feather="external-link" class="ml-2"></i>
+                </a>
+              </div>
+              <div>
+                <img src="http://static.photos/technology/640x360/4" alt="Sistema de Resfriamento" class="rounded-xl shadow-lg w-full">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 md:p-12">
+          <div class="max-w-4xl mx-auto">
+            <div class="bg-secondary bg-opacity-10 p-8 rounded-xl">
+              <h3 class="text-2xl font-bold text-dark mb-6 text-center">Pronto para Reduzir o Consumo de Água?</h3>
+              <p class="text-gray-700 mb-6 text-center">Comece com estas etapas práticas:</p>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                  <div class="bg-secondary text-white rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-3">
+                    <span class="font-bold">1</span>
+                  </div>
+                  <p class="text-sm text-gray-700">Avalie o consumo atual de água</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                  <div class="bg-secondary text-white rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-3">
+                    <span class="font-bold">2</span>
+                  </div>
+                  <p class="text-sm text-gray-700">Identifique oportunidades de eficiência</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                  <div class="bg-secondary text-white rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-3">
+                    <span class="font-bold">3</span>
+                  </div>
+                  <p class="text-sm text-gray-700">Implemente soluções de resfriamento alternativas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-6 mb-12">
+        <h3 class="text-xl font-bold text-dark mb-4">Fontes & Referências</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li>
+            <a href="https://www.google.com/about/datacenters/water/" target="_blank" class="text-primary hover:underline flex items-center">
+              Google - Data Centers e Água <i data-feather="external-link" class="ml-2"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.microsoft.com/en-us/corporate-responsibility/sustainability" target="_blank" class="text-primary hover:underline flex items-center">
+              Microsoft - Sustentabilidade <i data-feather="external-link" class="ml-2"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://sustainability.fb.com/" target="_blank" class="text-primary hover:underline flex items-center">
+              Facebook - Sustentabilidade <i data-feather="external-link" class="ml-2"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex justify-between">
+        <a href="post2.html" class="inline-flex items-center text-primary font-medium">
+          <i data-feather="arrow-left" class="mr-2"></i> Anterior: Reduzindo o Consumo de Energia
+        </a>
+        <a href="post4.html" class="inline-flex items-center text-primary font-medium">
+          Próximo: Reduzindo o Lixo Eletrônico <i data-feather="arrow-right" class="ml-2"></i>
+        </a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4">GreenIT</h3>
+            <p class="text-gray-400">Estratégias práticas de sustentabilidade para empresas de TI.</p>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Links Rápidos</h4>
+            <ul class="space-y-2">
+              <li><a href="index.html" class="text-gray-400 hover:text-primary transition">Início</a></li>
+              <li><a href="index.html#infographics" class="text-gray-400 hover:text-primary transition">Infográficos</a></li>
+              <li><a href="index.html#about" class="text-gray-400 hover:text-primary transition">Sobre</a></li>
+              <li><a href="index.html#contact" class="text-gray-400 hover:text-primary transition">Contato</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Conectar</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-primary transition"><i data-feather="twitter"></i></a>
+              <a href="#" class="text-gray-400 hover:text-primary transition"><i data-feather="linkedin"></i></a>
+              <a href="#" class="text-gray-400 hover:text-primary transition"><i data-feather="github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+          <p>&copy; 2025 GreenIT. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      feather.replace();
+    </script>
+</body>
+</html>

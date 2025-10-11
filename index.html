@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Guia de TI Verde</title>
+<link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#2ECC71',
+              secondary: '#3498DB',
+              dark: '#1A252F',
+              light: '#F8F9FA',
+            }
+          }
+        }
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+      .vanta-bg {
+        min-height: 100vh;
+      }
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+      .infographic-icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+      }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section with Vanta.js Globe -->
+    <div id="vanta-bg" class="vanta-bg flex items-center justify-center">
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="relative z-10 text-center px-4 py-20 max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Guia de TI Verde para Heróis da Tecnologia</h1>
+        <p class="text-xl text-gray-200 mb-8">Estratégias práticas de sustentabilidade para empresas de TI reduzirem seu impacto ambiental</p>
+        <a href="#infographics" class="bg-primary hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-flex items-center">
+          Explorar Infográficos <i data-feather="arrow-down" class="ml-2"></i>
+</a>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <a href="#" class="flex items-center">
+              <i data-feather="cloud" class="text-primary mr-2"></i>
+              <span class="text-xl font-bold text-dark">GreenIT</span>
+            </a>
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="#infographics" class="text-gray-700 hover:text-primary transition">Infográficos</a>
+            <a href="#about" class="text-gray-700 hover:text-primary transition">Sobre</a>
+            <a href="#contact" class="text-gray-700 hover:text-primary transition">Contato</a>
+</div>
+          <button class="md:hidden">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Infographics Section -->
+    <section id="infographics" class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-dark mb-4">8 Formas de Implementar TI Verde</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">Explore nossa série de infográficos para ajudar sua empresa de TI a se tornar mais sustentável</p>
+</div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Infographic Card 1 -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition duration-300 card-hover">
+            <div class="bg-primary p-6">
+              <div class="infographic-icon bg-white rounded-full flex items-center justify-center">
+                <i data-feather="globe" class="text-primary text-3xl"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-dark mb-3">Introdução à TI Verde</h3>
+              <p class="text-gray-600 mb-4">Entendendo os fundamentos das práticas de tecnologia sustentável</p>
+              <a href="post1.html" class="text-primary font-medium inline-flex items-center">
+                Ver Infográfico <i data-feather="arrow-right" class="ml-2"></i>
+</a>
+            </div>
+          </div>
+
+          <!-- Infographic Card 2 -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition duration-300 card-hover">
+            <div class="bg-secondary p-6">
+              <div class="infographic-icon bg-white rounded-full flex items-center justify-center">
+                <i data-feather="zap" class="text-secondary text-3xl"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-dark mb-3">Reduzindo o Consumo de Energia</h3>
+              <p class="text-gray-600 mb-4">Estratégias para reduzir o uso de energia na infraestrutura de TI</p>
+              <a href="post2.html" class="text-secondary font-medium inline-flex items-center">
+                Ver Infográfico <i data-feather="arrow-right" class="ml-2"></i>
+</a>
+            </div>
+          </div>
+
+          <!-- Infographic Card 3 -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition duration-300 card-hover">
+            <div class="bg-primary p-6">
+              <div class="infographic-icon bg-white rounded-full flex items-center justify-center">
+                <i data-feather="droplet" class="text-primary text-3xl"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-dark mb-3">Reduzindo o Consumo de Água</h3>
+              <p class="text-gray-600 mb-4">Soluções inovadoras de resfriamento para data centers</p>
+              <a href="post3.html" class="text-primary font-medium inline-flex items-center">
+                Ver Infográfico <i data-feather="arrow-right" class="ml-2"></i>
+</a>
+            </div>
+          </div>
+
+          <!-- Infographic Card 4 -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition duration-300 card-hover">
+            <div class="bg-secondary p-6">
+              <div class="infographic-icon bg-white rounded-full flex items-center justify-center">
+                <i data-feather="trash-2" class="text-secondary text-3xl"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-dark mb-3">Reduzindo o Lixo Eletrônico</h3>
+              <p class="text-gray-600 mb-4">Criando uma economia circular para hardware de TI</p>
+              <a href="post4.html" class="text-secondary font-medium inline-flex items-center">
+                Ver Infográfico <i data-feather="arrow-right" class="ml-2"></i>
+</a>
+            </div>
+          </div>
+
+          <!-- Infographic Card 5 -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition duration-300 card-hover">
+            <div class="bg-primary p-6">
+              <div class="infographic-icon bg-white rounded-full flex items-center justify-center">
+                <i data-feather="wind" class="text-primary text-3xl"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-dark mb-3">Reduzindo Emissões de Carbono</h3>
+              <p class="text-gray-600 mb-4">Como a migração para a nuvem pode reduzir sua pegada de carbono</p>
+              <a href="post5.html" class="text-primary font-medium inline-flex items-center">
+                Ver Infográfico <i data-feather="arrow-right" class="ml-2"></i>
+</a>
+            </div>
+          </div>
+          <!-- Infographic Card 6 -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition duration-300 card-hover">
+            <div class="bg-secondary p-6">
+              <div class="infographic-icon bg-white rounded-full flex items-center justify-center">
+                <i data-feather="cloud" class="text-secondary text-3xl"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-dark mb-3">O Papel da Computação em Nuvem</h3>
+              <p class="text-gray-600 mb-4">Por que a nuvem é inerentemente mais verde que soluções locais</p>
+              <a href="post6.html" class="text-secondary font-medium inline-flex items-center">
+                Ver Infográfico <i data-feather="arrow-right" class="ml-2"></i>
+</a>
+            </div>
+          </div>
+
+          <!-- Infographic Card 7 -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition duration-300 card-hover">
+            <div class="bg-primary p-6">
+              <div class="infographic-icon bg-white rounded-full flex items-center justify-center">
+                <i data-feather="monitor" class="text-primary text-3xl"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-dark mb-3">Escolhas de Hardware Sustentável</h3>
+              <p class="text-gray-600 mb-4">Selecionando e gerenciando equipamentos de TI ecológicos</p>
+              <a href="post7.html" class="text-primary font-medium inline-flex items-center">
+                Ver Infográfico <i data-feather="arrow-right" class="ml-2"></i>
+</a>
+            </div>
+          </div>
+
+          <!-- Infographic Card 8 -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition duration-300 card-hover">
+            <div class="bg-secondary p-6">
+              <div class="infographic-icon bg-white rounded-full flex items-center justify-center">
+                <i data-feather="bar-chart-2" class="text-secondary text-3xl"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-dark mb-3">Mensurando Seu Impacto</h3>
+              <p class="text-gray-600 mb-4">Métricas-chave para acompanhar seu progresso em TI Verde</p>
+              <a href="post8.html" class="text-secondary font-medium inline-flex items-center">
+                Ver Infográfico <i data-feather="arrow-right" class="ml-2"></i>
+</a>
+            </div>
+          </div>
+</div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:flex lg:items-center lg:justify-between">
+          <div class="lg:w-1/2 mb-12 lg:mb-0">
+        <h2 class="text-3xl font-bold text-dark mb-6">Sobre Este Projeto</h2>
+        <p class="text-gray-600 mb-6">O Guia de TI Verde foi criado para ajudar empresas de tecnologia a entender e implementar práticas sustentáveis que reduzem o impacto ambiental mantendo a eficiência nos negócios.</p>
+        <p class="text-gray-600 mb-6">Nossa pesquisa é baseada em fontes confiáveis incluindo IBM, Oracle e BHS, combinado com estudos de caso reais que demonstram os benefícios tangíveis da TI Verde.</p>
+        <div class="flex space-x-4">
+          <div class="bg-primary bg-opacity-10 p-4 rounded-lg">
+            <i data-feather="target" class="text-primary mb-2"></i>
+            <h4 class="font-bold text-dark">Missão</h4>
+            <p class="text-sm text-gray-600">Tornar a TI sustentável</p>
+          </div>
+          <div class="bg-secondary bg-opacity-10 p-4 rounded-lg">
+            <i data-feather="eye" class="text-secondary mb-2"></i>
+            <h4 class="font-bold text-dark">Visão</h4>
+            <p class="text-sm text-gray-600">Futuro tecnológico verde</p>
+</div>
+            </div>
+          </div>
+          <div class="lg:w-1/2 lg:pl-12">
+            <img src="http://static.photos/technology/640x360/1" alt="Green Technology" class="rounded-lg shadow-lg w-full">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-dark mb-4">Entre em Contato</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">Tem dúvidas sobre como implementar TI Verde em sua organização? Contate-nos para mais informações.</p>
+</div>
+        <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-md overflow-hidden p-8">
+          <form>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <label for="name" class="block text-gray-700 font-medium mb-2">Nome</label>
+<input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+              </div>
+              <div>
+                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+              </div>
+            </div>
+            <div class="mb-6">
+                <label for="message" class="block text-gray-700 font-medium mb-2">Mensagem</label>
+<textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+            </div>
+            <button type="submit" class="bg-primary hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 inline-flex items-center">
+              Enviar Mensagem <i data-feather="send" class="ml-2"></i>
+</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4">GreenIT</h3>
+            <p class="text-gray-400">Estratégias práticas de sustentabilidade para empresas de TI.</p>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Links Rápidos</h4>
+            <ul class="space-y-2">
+              <li><a href="#infographics" class="text-gray-400 hover:text-primary transition">Infográficos</a></li>
+              <li><a href="#about" class="text-gray-400 hover:text-primary transition">Sobre</a></li>
+              <li><a href="#contact" class="text-gray-400 hover:text-primary transition">Contato</a></li>
+            </ul>
+</div>
+          <div>
+            <h4 class="font-bold mb-4">Recursos</h4>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-gray-400 hover:text-primary transition">Estudos de Caso</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-primary transition">Artigos de Pesquisa</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-primary transition">Ferramentas</a></li>
+            </ul>
+</div>
+          <div>
+            <h4 class="font-bold mb-4">Conectar</h4>
+<div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-primary transition"><i data-feather="twitter"></i></a>
+              <a href="#" class="text-gray-400 hover:text-primary transition"><i data-feather="linkedin"></i></a>
+              <a href="#" class="text-gray-400 hover:text-primary transition"><i data-feather="github"></i></a>
+              <a href="#" class="text-gray-400 hover:text-primary transition"><i data-feather="facebook"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+          <p>&copy; 2025 GreenIT. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Initialize Vanta.js globe
+      VANTA.GLOBE({
+        el: "#vanta-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: "#2ECC71",
+        backgroundColor: "#1A252F",
+        size: 0.8
+      });
+    </script>
+    <script>
+      feather.replace();
+    </script>
+</body>
+</html>
